@@ -1,0 +1,7 @@
+/* Add custom styles for invalid inputs */
+input:invalid, textarea:invalid {
+    border-color: #dc3545; /* Bootstrap's danger color */
+}
+input:valid, textarea:valid {
+    border-color: #28a745; /* Bootstrap's success color */
+}
