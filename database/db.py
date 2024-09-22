@@ -15,7 +15,8 @@ def connection_SQL():
             host=host,
             user=user,
             password=passw,
-            database=db_name
+            database=db_name,
+            cursorclass=pymysql.cursors.DictCursor  # Ensure DictCursor is used
         )
         print("Succesfull connection to database")
         return connection
